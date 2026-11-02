@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citas Enfermería Escolar</title>
+<style>
+body{font-family:Arial;background:#e3f2fd;margin:0;padding:20px}
+.container{max-width:600px;background:white;margin:auto;padding:20px;border-radius:10px;box-shadow:0 0 10px #aaa}
+h1{color:#1976d2;text-align:center}
+input,button{width:100%;padding:10px;margin:5px 0;border-radius:5px;border:1px solid #ccc}
+button{background:#1976d2;color:white;border:none;cursor:pointer}
+.cita{background:#f1f8e9;padding:10px;margin-top:10px;border-left:4px solid #4caf50}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>🩺 Citas Enfermería Escolar</h1>
+<p>Sistema para agendar citas en la enfermería</p>
+<input type="text" id="nombre" placeholder="Nombre del estudiante">
+<input type="date" id="fecha">
+<input type="time" id="hora">
+<input type="text" id="motivo" placeholder="Motivo de la consulta">
+<button onclick="agendar()">Agendar Cita</button>
+<div id="lista"></div>
+</div>
+<script>
+function agendar(){
+ let n=document.getElementById('nombre').value;
+ let f=document.getElementById('fecha').value;
+ let h=document.getElementById('hora').value;
+ let m=document.getElementById('motivo').value;
+ if(n=="") return alert("Escribe el nombre");
+ let div=document.createElement('div');
+ div.className='cita';
+ div.innerHTML="<b>"+n+"</b> - "+f+" "+h+"<br>Motivo: "+m;
+ document.getElementById('lista').appendChild(div);
+}
+</script>
+</body>
+  </html>
