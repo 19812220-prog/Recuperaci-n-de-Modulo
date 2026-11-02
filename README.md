@@ -2,8 +2,6 @@
 EL SIGUIENTE REPOSITORIO CONTIENE ELEMENTOS DE "CITAS-ENFERMERIA-ESCOLAR" CONSITE EN UN SISTEMA DE CITAS PARA ENFERMERÍA ESCOLAR 
 ### 👋 ¡Hola! Soy Daniela Hernández
 
-> 📚 Estudiante de software de primer año | Hermana gemela de Hazel Hernández
-
 Soy Daniela Hernández de primer año de software, de El Salvador. Me apasiona la tecnología y estoy empezando mi camino en el mundo de la programación.
 
 ---
